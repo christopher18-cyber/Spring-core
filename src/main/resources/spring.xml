@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dev" class="com.genius.Dev" scope="prototype">
+        <property name="laptop" ref="laptop"/>
+        <property name="age" value="12"/>
+<!--        <constructor-arg/>-->
+    </bean>
+    <bean id="laptop" class="com.genius.Laptop"/>
+    <bean id="dev1" class="com.genius.Dev"/>
+
+</beans>
